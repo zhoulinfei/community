@@ -13,5 +13,9 @@ public interface DiscussPostMapper {
 
     int selectDiscussPostRows(@Param("userId") int userId); // 如果SQL需要动态拼接，并且只有一个参数，则必须要取别名
 
+    int insertDiscussPost(DiscussPost discussPost);
+
+    DiscussPost selectDiscussPostById(int id);
+
 
 }
